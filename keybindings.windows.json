@@ -39,11 +39,13 @@
     { "key": "alt+8",                 "command": "" },
     { "key": "alt+9",                 "command": "" },
     { "key": "alt+0",                 "command": "" },
-
-
+    
+    
 
     { "key": "ctrl+d",                  "command": "editor.action.copyLinesDownAction",
-                                       "when": "editorTextFocus" },
+                                        "when": "editorTextFocus" },
+    { "key": "shift+f6",                      "command": "editor.action.rename",
+                                        "when": "editorTextFocus" },
     { "key": "ctrl+alt+left",          "command": "workbench.action.navigateBack" },
     { "key": "ctrl+alt+right",          "command": "workbench.action.navigateForward" }
 ]
