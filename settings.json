@@ -1,10 +1,11 @@
 // Place your settings in this file to overwrite the default settings
 {
 	"editor.fontFamily": "'Courier New', Consolas, monospace",
-	"editor.fontSize": 14,
+	"editor.fontSize": 15,
 	"editor.referenceInfos": false,
 	"editor.roundedSelection": false,
 	"workbench.editor.enablePreview": true,
 	"workbench.editor.enablePreviewFromQuickOpen": false,
-	"files.autoSave": "afterDelay"
+	"files.autoSave": "afterDelay",
+	"terminal.integrated.shell.windows": "C:\\Users\\<UserName>\\AppData\\Roaming\\Code\\User\\PowerShell-In-VSCode.bat"
 }
