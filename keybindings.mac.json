@@ -1,8 +1,5 @@
-// 将键绑定放入此文件中以覆盖默认值
 [
     { "key": "cmd+k cmd+b",           "command": "workbench.action.toggleSidebarVisibility" },
-    { "key": "cmd+k cmd+9",           "command": "editor.unfoldAll",
-                                        "when": "editorFocus" },
     { "key": "alt+f3",                  "command": "editor.action.selectAllMatches",
                                         "when": "editorFocus && findWidgetVisible" },
     { "key": "cmd+w",                  "command": "editor.action.smartSelect.grow",
@@ -11,12 +8,17 @@
     { "key": "cmd+b",                  "command": "editor.action.goToDeclaration",
                                         "when": "editorTextFocus" },
     { "key": "cmd+,",                  "command": "workbench.action.showAllSymbols" },
+    // cmd+. sometimes not working
     { "key": "alt+enter",                "command": "editor.action.quickFix",
                                         "when": "editorTextFocus" },
     { "key": "cmd+[",                  "command": "editor.fold",
                                         "when": "editorTextFocus" },
     { "key": "cmd+]",                  "command": "editor.unfold",
                                         "when": "editorTextFocus" },
+    { "key": "shift+cmd+]",           "command": "editor.unfoldAll",
+                                        "when": "editorFocus" },
+    { "key": "shift+cmd+[",           "command": "editor.foldAll",
+                                     "when": "editorFocus" },
     { "key": "cmd+j",                "command": "editor.action.triggerSuggest" },
     { "key": "cmd+q",                "command": "workbench.action.togglePanel" },
     { "key": "cmd+1",                 "command": "workbench.action.openEditorAtIndex1" },
@@ -39,11 +41,13 @@
     { "key": "alt+9",                 "command": "" },
     { "key": "alt+0",                 "command": "" },
 
+
+
+    { "key": "cmd+f4",                 "command": "workbench.action.closeActiveEditor" },
     { "key": "cmd+d",                  "command": "editor.action.copyLinesDownAction",
                                        "when": "editorTextFocus" },
-    { "key": "shift+f6",                      "command": "editor.action.rename",
-                                        "when": "editorTextFocus" },
+    { "key": "shift+f6",               "command": "editor.action.rename",
+                                       "when": "editorTextFocus" },
     { "key": "ctrl+alt+left",          "command": "workbench.action.navigateBack" },
-    { "key": "ctrl+alt+right",          "command": "workbench.action.navigateForward" },
-    { "key": "cmd+f4",                 "command": "workbench.action.closeActiveEditor" }
+    { "key": "ctrl+alt+right",         "command": "workbench.action.navigateForward" }
 ]

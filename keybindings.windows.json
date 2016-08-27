@@ -1,8 +1,8 @@
-// 将键绑定放入此文件中以覆盖默认值
 [
+    // in parallels, keyboard layout, we need use \\ to replace .
+    { "key": "ctrl+\\",                "command": "workbench.action.terminal.toggleTerminal" },
+    { "key": "ctrl+shift+\\",          "command": "workbench.action.terminal.new" },
     { "key": "ctrl+k ctrl+b",           "command": "workbench.action.toggleSidebarVisibility" },
-    { "key": "ctrl+k ctrl+9",           "command": "editor.unfoldAll",
-                                        "when": "editorFocus" },
     { "key": "alt+f3",                  "command": "editor.action.selectAllMatches",
                                         "when": "editorFocus && findWidgetVisible" },
     { "key": "ctrl+w",                  "command": "editor.action.smartSelect.grow",
@@ -18,6 +18,10 @@
                                         "when": "editorTextFocus" },
     { "key": "ctrl+]",                  "command": "editor.unfold",
                                         "when": "editorTextFocus" },
+    { "key": "shift+ctrl+]",           "command": "editor.unfoldAll",
+                                        "when": "editorFocus" },
+    { "key": "shift+ctrl+[",           "command": "editor.foldAll",
+                                     "when": "editorFocus" },
     { "key": "ctrl+j",                "command": "editor.action.triggerSuggest" },
     { "key": "ctrl+q",                "command": "workbench.action.togglePanel" },
     { "key": "ctrl+1",                 "command": "workbench.action.openEditorAtIndex1" },
@@ -39,9 +43,7 @@
     { "key": "alt+8",                 "command": "" },
     { "key": "alt+9",                 "command": "" },
     { "key": "alt+0",                 "command": "" },
-    
-    
-
+    { "key": "ctrl+f4",                 "command": "workbench.action.closeActiveEditor" },
     { "key": "ctrl+d",                  "command": "editor.action.copyLinesDownAction",
                                         "when": "editorTextFocus" },
     { "key": "shift+f6",                      "command": "editor.action.rename",
